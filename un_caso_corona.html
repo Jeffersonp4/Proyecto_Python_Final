@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
+	<title> Casos de corona virus </title>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+	<script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" ></script>
+</head>
+<body>
+
+	<h1> Caso encontrado de coronavirus en el pais </h1>
+	<div id="divMap" class="map map-home" style="margin: 12px 0 12px 0; height:600px;"></div>
+
+	<script>
+		var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			osmAttrib = '&copy; <a href="http://adamix.net">Amadis Suarez</a> contributors',
+			osm = L.tileLayer(osmUrl, {maxzoom: 20, attribution: osmAttrib});
+		var map = L.map('divMap').setView([19.4398375, -70.8132746], 8).addLayer(osm);
+
+
+		{MARCADORES}
+
+		
+		
+
+		/*
+
+		L.marker([18.4511052, -69.6624628])
+			.addTo(map)
+			.bindPopup('es el itla por favor llamar al 809-466-0420');
+
+		*/
+
+
+		
+
+	</script>
+
+	<p> Este es el mapa de los casos de coronavirus encontrados en el pais </p>
+	
+
+</body>
+</html>

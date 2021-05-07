@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
+	<title> Metioritos caidos a nivel mundial </title>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+	<script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" ></script>
+</head>
+<body>
+
+	<h1> Metioritos caidos a nivel mundial </h1>
+	<div id="divMap" class="map map-home" style="margin: 12px 0 12px 0; height:600px;"></div>
+
+	<script>
+		var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			osmAttrib = '&copy; <a href="http://adamix.net">Amadis Suarez</a> contributors',
+			osm = L.tileLayer(osmUrl, {maxzoom: 20, attribution: osmAttrib});
+		var map = L.map('divMap').setView([19.4398375, -70.8132746], 8).addLayer(osm);
+
+
+		L.marker([18.4800295, -70.0169209])
+                        .addTo(map)
+                        .bindPopup('cedula:40213775881 , pasaporte:no tiene , id:no tiene , nombre:JEFFERSON , apellido:PAYANO , sexo:masculino , Fecha_nacimiento:2001-05-09 , signo: Tauro. , nacionalidad:dominicano , estado:enfermo , correo:jey@gmail.com , telefono:8294660420 , provincia:Santo Domingo '); L.marker([19.2206434, -70.5632121])
+                        .addTo(map)
+                        .bindPopup('cedula:02800018273 , pasaporte:no tiene , id:no tiene , nombre:PATRICIA , apellido:DEL RIO , sexo:femenino , Fecha_nacimiento:1970-03-17 , signo: piscis. , nacionalidad:dominicana , estado:enferma , correo:patri@gmail.com , telefono:8299309628 , provincia:La Vega '); L.marker([18.4352461, -70.1892459])
+                        .addTo(map)
+                        .bindPopup('cedula:40238538728 , pasaporte:no tiene , id:no tiene , nombre:CARY GUALESCA , apellido:PAYANO , sexo:femenino , Fecha_nacimiento:1998-08-27 , signo: Virgo. , nacionalidad:dominicana , estado:recuperada , correo:cary@gmail.com , telefono:8295069907 , provincia:San Cristóbal '); L.marker([18.4326968, -69.0425614])
+                        .addTo(map)
+                        .bindPopup('cedula:40213775881 , pasaporte:no tiene , id:no tiene , nombre:JEFFERSON , apellido:PAYANO , sexo:masculino , Fecha_nacimiento:2001-05-09 , signo: Tauro. , nacionalidad:dominicano , estado:recuperado , correo:jeysss@gmail.om , telefono:8097102809 , provincia:La Romana '); L.marker([18.4696403, -69.337519])
+                        .addTo(map)
+                        .bindPopup('cedula:02800018273 , pasaporte:no tiene , id:no tiene , nombre:PATRICIA , apellido:DEL RIO , sexo:femenino , Fecha_nacimiento:1970-03-17 , signo: piscis. , nacionalidad:italiana , estado:enferma , correo:patrici@gmail.com , telefono:8294660420 , provincia:San Pedro de Macorís '); L.marker([19.3942362, -70.5398826])
+                        .addTo(map)
+                        .bindPopup('cedula:40225646575 , pasaporte:no tiene , id:no tiene , nombre:OMAR ANTONIO , apellido:PAYANO , sexo:masculino , Fecha_nacimiento:1996-06-07 , signo: Geminis. , nacionalidad:haitiano , estado:enfermo , correo:omar@gmail.com , telefono:8295069907 , provincia:Espaillat ');
+
+		
+		
+
+		/*
+
+		L.marker([18.4511052, -69.6624628])
+			.addTo(map)
+			.bindPopup('es el itla por favor llamar al 809-466-0420');
+
+		*/
+
+
+		
+
+	</script>
+
+	<p> Este es el mapa de los metioritos </p>
+	
+
+</body>
+</html>
